@@ -127,7 +127,7 @@
       <div data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb577" class="logo-wr" style="opacity: 1;">
           <!-- Talk-tutor logo  -->
           <img src="/logo.svg" alt="" class="mt-9" style="width: 100px; margin-left: 50px;">
-         
+        
           <a href="/" aria-current="page" class="w-inline-block w--current"><img src="logo.svg" loading="lazy" alt=""
                   class="logo-img"></a>
       </div>
@@ -166,8 +166,8 @@
                   class="dropdown w-dropdown">
                   <div class="dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-1"
                       aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button"
-                      tabindex="0"><a href="about.html" class="link-block text-color w-inline-block">
-                          <div class="text-block-3">About Us</div>
+                      tabindex="0"><a href="highscores.html" class="link-block text-color w-inline-block">
+                          <div class="text-block-3">Highscores</div>
                           <div class="icon-3 w-icon-dropdown-toggle" aria-hidden="true"></div>
                       </a></div>
                   <nav data-w-id="b2ef99fc-c393-1c1f-d41e-173ab3f42679" class="dropdown-list w-dropdown-list"
@@ -275,15 +275,15 @@
                   </nav>
               </div>
           </div>
-          <div class="nav-buttons mob-menu"><a href="register.html" class="login-btn mob-btn w-inline-block">
-                  <div>Register</div>
+          <div class="nav-buttons mob-menu"><a href="/" class="login-btn mob-btn w-inline-block">
+                  <div>Log in</div>
               </a><a href="/" class="try-btn w-inline-block">
                   <div>Try TalkTutor</div>
               </a></div>
       </div>
-      <div class="nav-buttons"><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb587" href="/register.html"
-class="login-btn w-inline-block">
-              <div>Register</div>
+      <div class="nav-buttons"><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb587" href="/login.html"
+              class="login-btn w-inline-block">
+              <div>Log in</div>
           </a><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb58a" href="/register.html" class="try-btn w-inline-block">
               <div>Get Talk-Tutor</div>
           </a></div>
@@ -329,32 +329,49 @@ class="login-btn w-inline-block">
       </div>
   </nav>
   </header>
+  <link rel="stylesheet" href="login.css">
   <div class="section-medium about-us">
 
 <!-- content area  -->
 <body>
-  <div class="maincontainer">
-    
-    <div class="monkeylogin " style="height: 550px;">
+
+  
+  <div class="maincontainer -mt-14 " st>
+    <img src="feed.gif" alt="" class="ml-[-250px] w-[300px] mt-[-200px  ] ">
+
+    <div class="monkeylogin" style=" height: 550px;">
       <div class="animcon" id="animcon">
         <img id="hands" src="hands.png">
       </div>
       <div class="formcon">
-        <form>
-          <input type="email" id="mail" name="email" onclick="openeye();" class="tb" placeholder="Email" autocomplete="off">
-          <br>
-          <br>
-          <input type="password" id="pwdbar" onclick="closeye();" name="pwd" class="tb" placeholder="Password">
-          <br>
-          <br>
-          <input type="submit" name="login" class="sbutton" value="L O G I N">
-          <p style="margin-top:20px ;">Does not have account ? <a href="/register.html" style="color: rgb(98,82,216);" >Sign Up</a></p>
-        </form>
+        <div class="w-[1080px] px-4 py-8 border rounded">
+          <h1 class="text-2xl font-bold mb-4">Feedback Form</h1>
+          <form action="/Quiz module/feedthanks.html">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+              <label for="feedback" class="block text-gray-700 font-bold mb-2">Feedback</label>
+              <textarea id="feedback" name="feedback" placeholder="Enter your feedback" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+            </div>
+            <form>
+              <button name="login" class="sbutton" onclick="window.location.href = 'thanks.html';" style="border-radius: 20px; ">send</button>
+              <p style="margin-top: 10px;">Your Feedback Helps Us To Grow</p>
+            </form>
+            
+        </div>
       </div>
       <footer class="foot"><a style="color: #bababa; text-decoration: none;" href=""></a></footer>
     </div>
+  
   </div>
-  <script type="text/javascript" src="script.js"></script>
+  <!-- <script type="text/javascript" src="script.js"></script> -->
+  
 </body>
 
 
@@ -418,7 +435,7 @@ class="login-btn w-inline-block">
                   </div>
                   <div>
                       <h2 class="footer-heading">Talk Tutor-a step towards your success</h2>
-                      <a href="login.html" class="button footer w-button">Get Talk-Tutor </a>
+                      <a href="/" class="button footer w-button">Get Talk-Tutor </a>
                   </div>
               </div>
               <div class="footer-container-bot">

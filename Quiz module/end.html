@@ -1,3 +1,4 @@
+
 <head>
   <style>
       .wf-force-outline-none[tabindex="-1"]:focus {
@@ -77,10 +78,12 @@
       }
   </style>
 </head>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="app.css">
 <body>
- 
+  <div class="w-embed w-iframe">
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJPWKVH" height="0" width="0"
+              style="display:none;visibility:hidden"></iframe></noscript>
+  </div>
   <div class="html-embed w-embed">
       <style>
           body {
@@ -126,8 +129,7 @@
   <nav class="navbar max-w">
       <div data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb577" class="logo-wr" style="opacity: 1;">
           <!-- Talk-tutor logo  -->
-          <img src="/logo.svg" alt="" class="mt-9" style="width: 100px; margin-left: 50px;">
-         
+          <img src="/logo.svg" alt="" class="mt-9">
           <a href="/" aria-current="page" class="w-inline-block w--current"><img src="logo.svg" loading="lazy" alt=""
                   class="logo-img"></a>
       </div>
@@ -166,8 +168,8 @@
                   class="dropdown w-dropdown">
                   <div class="dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-1"
                       aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button"
-                      tabindex="0"><a href="about.html" class="link-block text-color w-inline-block">
-                          <div class="text-block-3">About Us</div>
+                      tabindex="0"><a href="highscores.html" class="link-block text-color w-inline-block">
+                          <div class="text-block-3">Highscores</div>
                           <div class="icon-3 w-icon-dropdown-toggle" aria-hidden="true"></div>
                       </a></div>
                   <nav data-w-id="b2ef99fc-c393-1c1f-d41e-173ab3f42679" class="dropdown-list w-dropdown-list"
@@ -275,16 +277,16 @@
                   </nav>
               </div>
           </div>
-          <div class="nav-buttons mob-menu"><a href="register.html" class="login-btn mob-btn w-inline-block">
-                  <div>Register</div>
+          <div class="nav-buttons mob-menu"><a href="/" class="login-btn mob-btn w-inline-block">
+                  <div>Log in</div>
               </a><a href="/" class="try-btn w-inline-block">
                   <div>Try TalkTutor</div>
               </a></div>
       </div>
-      <div class="nav-buttons"><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb587" href="/register.html"
-class="login-btn w-inline-block">
-              <div>Register</div>
-          </a><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb58a" href="/register.html" class="try-btn w-inline-block">
+      <div class="nav-buttons"><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb587" href="/"
+              class="login-btn w-inline-block">
+              <div>Log in</div>
+          </a><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb58a" href="/" class="try-btn w-inline-block">
               <div>Get Talk-Tutor</div>
           </a></div>
       <div id="menu-trigger" data-w-id="5ab0c546-3372-fccf-5879-0ae39b42d8e7" class="nav-btn">
@@ -331,32 +333,44 @@ class="login-btn w-inline-block">
   </header>
   <div class="section-medium about-us">
 
-<!-- content area  -->
-<body>
-  <div class="maincontainer">
+<!-- question area  -->
     
-    <div class="monkeylogin " style="height: 550px;">
-      <div class="animcon" id="animcon">
-        <img id="hands" src="hands.png">
-      </div>
-      <div class="formcon">
-        <form>
-          <input type="email" id="mail" name="email" onclick="openeye();" class="tb" placeholder="Email" autocomplete="off">
-          <br>
-          <br>
-          <input type="password" id="pwdbar" onclick="closeye();" name="pwd" class="tb" placeholder="Password">
-          <br>
-          <br>
-          <input type="submit" name="login" class="sbutton" value="L O G I N">
-          <p style="margin-top:20px ;">Does not have account ? <a href="/register.html" style="color: rgb(98,82,216);" >Sign Up</a></p>
-        </form>
-      </div>
-      <footer class="foot"><a style="color: #bababa; text-decoration: none;" href=""></a></footer>
-    </div>
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-</body>
+<div class="container">
+  <div id="end" class="flex-center flex-column">
+    <img src="congratulations.gif" alt="" style="height: 400px; margin-top: -300px;">
+    <h1 id="finalScore" style="margin-top: -100px;"></h1>
+    <form>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="username"
+      />
 
+      <div class="flex " >
+        <button
+        type="submit"
+        class="button footer w-button"
+        id="saveScoreBtn"
+        onclick="saveHighScore(event); window.location.href='thanks.html'; return false;"
+        disabled
+      >
+        Save
+      </button>
+      
+
+      
+    </form>
+    <div style="margin-left: 20px;">
+      
+      <a href="game.html" class="button footer w-button">Play again </a>
+  </div>
+    
+      </div>
+      
+  </div>
+</div>
+<script src="end.js"></script>
 
       <!-- footer  -->
 
@@ -418,7 +432,7 @@ class="login-btn w-inline-block">
                   </div>
                   <div>
                       <h2 class="footer-heading">Talk Tutor-a step towards your success</h2>
-                      <a href="login.html" class="button footer w-button">Get Talk-Tutor </a>
+                      <a href="/" class="button footer w-button">Get Talk-Tutor </a>
                   </div>
               </div>
               <div class="footer-container-bot">
@@ -448,6 +462,40 @@ class="login-btn w-inline-block">
           </div>
       </footer>
 
+      </script>
+
+      <script>
+          if (window.location.search) {
+              const linksToApp = [...document.querySelectorAll('a')].filter(a => a.href.includes(''));
+              if (linksToApp.length) {
+                  linksToApp.forEach(link => {
+                      if (link.href.includes('?')) {
+                          link.href = `${link.href}&${window.location.search.substring(1)}`;
+                      } else if (link.href) {
+                          link.href = `${link.href}${window.location.search}`;
+                      }
+                  });
+              }
+          }
+      </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+      <script>
+          var typeData = new Typed(".role", {
+              strings: [
+                  "Hello , Learner :)",
+                  "Let's Take a Demo Test",
+                  "We will Personalize your course according to your performance",
+                  "To Start Test , Click on the button below 👇",
+                  "Wish you Luck for your Test !",
+              ],
+              loop: true,
+              typeSpeed: 80,
+              backSpeed: 60,
+              backDelay: 1000,
+          });
       </script>
 
 

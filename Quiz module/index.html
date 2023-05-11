@@ -77,8 +77,7 @@
       }
   </style>
 </head>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="app.css">
 <body>
  
   <div class="html-embed w-embed">
@@ -123,7 +122,7 @@
   </div>
 
   <!-- nav bar  -->
-  <nav class="navbar max-w">
+  <nav class="navbar max-w ">
       <div data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb577" class="logo-wr" style="opacity: 1;">
           <!-- Talk-tutor logo  -->
           <img src="/logo.svg" alt="" class="mt-9" style="width: 100px; margin-left: 50px;">
@@ -166,8 +165,8 @@
                   class="dropdown w-dropdown">
                   <div class="dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-1"
                       aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button"
-                      tabindex="0"><a href="about.html" class="link-block text-color w-inline-block">
-                          <div class="text-block-3">About Us</div>
+                      tabindex="0"><a href="highscores.html" class="link-block text-color w-inline-block">
+                          <div class="text-block-3">Highscores</div>
                           <div class="icon-3 w-icon-dropdown-toggle" aria-hidden="true"></div>
                       </a></div>
                   <nav data-w-id="b2ef99fc-c393-1c1f-d41e-173ab3f42679" class="dropdown-list w-dropdown-list"
@@ -275,16 +274,16 @@
                   </nav>
               </div>
           </div>
-          <div class="nav-buttons mob-menu"><a href="register.html" class="login-btn mob-btn w-inline-block">
-                  <div>Register</div>
+          <div class="nav-buttons mob-menu"><a href="/" class="login-btn mob-btn w-inline-block">
+                  <div>Log in</div>
               </a><a href="/" class="try-btn w-inline-block">
                   <div>Try TalkTutor</div>
               </a></div>
       </div>
-      <div class="nav-buttons"><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb587" href="/register.html"
-class="login-btn w-inline-block">
-              <div>Register</div>
-          </a><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb58a" href="/register.html" class="try-btn w-inline-block">
+      <div class="nav-buttons"><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb587" href="/"
+              class="login-btn w-inline-block">
+              <div>Log in</div>
+          </a><a data-w-id="127cd460-ccb4-fe34-d2a8-4cabb5bfb58a" href="/" class="try-btn w-inline-block">
               <div>Get Talk-Tutor</div>
           </a></div>
       <div id="menu-trigger" data-w-id="5ab0c546-3372-fccf-5879-0ae39b42d8e7" class="nav-btn">
@@ -332,30 +331,17 @@ class="login-btn w-inline-block">
   <div class="section-medium about-us">
 
 <!-- content area  -->
-<body>
-  <div class="maincontainer">
-    
-    <div class="monkeylogin " style="height: 550px;">
-      <div class="animcon" id="animcon">
-        <img id="hands" src="hands.png">
+    <div class="container">
+      <div id="home" class="flex-center flex-column">
+        <img src="/logo.svg" style="width: 200px;" >
+        <h1 style="color: rgb(22,47,86);">Take English Quiz</h1>
+        <div>
+          <!-- <h2 class="footer-heading">Talk Tutor-a step towards your success</h2> -->
+          <a href="game.html" class="button footer w-button">play </a>
       </div>
-      <div class="formcon">
-        <form>
-          <input type="email" id="mail" name="email" onclick="openeye();" class="tb" placeholder="Email" autocomplete="off">
-          <br>
-          <br>
-          <input type="password" id="pwdbar" onclick="closeye();" name="pwd" class="tb" placeholder="Password">
-          <br>
-          <br>
-          <input type="submit" name="login" class="sbutton" value="L O G I N">
-          <p style="margin-top:20px ;">Does not have account ? <a href="/register.html" style="color: rgb(98,82,216);" >Sign Up</a></p>
-        </form>
+        <!-- <a class="btn" href="highscores.html">High Scores</a> -->
       </div>
-      <footer class="foot"><a style="color: #bababa; text-decoration: none;" href=""></a></footer>
     </div>
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-</body>
 
 
       <!-- footer  -->
@@ -418,7 +404,7 @@ class="login-btn w-inline-block">
                   </div>
                   <div>
                       <h2 class="footer-heading">Talk Tutor-a step towards your success</h2>
-                      <a href="login.html" class="button footer w-button">Get Talk-Tutor </a>
+                      <a href="/" class="button footer w-button">Get Talk-Tutor </a>
                   </div>
               </div>
               <div class="footer-container-bot">
